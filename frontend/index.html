@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>QR Code Generator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="bg"></div>
+
+    <nav class="navbar">
+      <div class="logo">
+        <a href="https://www.noolmedia.in/"
+          ><img src="nool.png" alt="Logo"
+        /></a>
+      </div>
+      <ul class="nav-items">
+        <li><a href="https://www.noolmedia.in/">Home</a></li>
+        <li>
+          <a href="https://www.noolmedia.in/#mediaiskgjyue11">Services</a>
+        </li>
+        <li><a href="https://www.noolmedia.in/#comp-m0f8afp6">About Us</a></li>
+        <li><a href="https://www.noolmedia.in/blog">Blog</a></li>
+        <li><a href="https://www.noolmedia.in/#comp-lsvshvee">Projects</a></li>
+        <li>
+          <a href="https://www.noolmedia.in/#comp-lsvshvef1">Lets Talk</a>
+        </li>
+        <li>
+          <a href="https://seo-report.onrender.com/"
+            ><button class="sitescore">Site score ></button></a
+          >
+        </li>
+      </ul>
+      <div class="hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </nav>
+    <div class="container">
+      <h1>QR Code Generator</h1>
+      <form id="qr-form">
+        <label for="url-input">Enter your URL:</label>
+        <input
+          type="url"
+          id="url-input"
+          placeholder="https://example.com"
+          required
+        />
+        <button type="submit">Generate QR Code</button>
+      </form>
+      <div id="qr-result" class="hidden">
+        <h2>Your QR Code:</h2>
+        <img id="qr-image" alt="Generated QR Code" />
+        <a id="download-link" download="qr-code.png">Download QR Code</a>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
